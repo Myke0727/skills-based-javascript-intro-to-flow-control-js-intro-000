@@ -8,10 +8,8 @@ const path = require('path')
 
 
 
-  before(done => {function basicTeenager(age) {
-if (age >= 13 && age <= 19) {
-return 'You are a teenager!'}
-}
+ describe('basicTeenager') before(done => 
+
     const src = path.resolve(__dirname, '..', 'flow-control.js')
 
     jsdom.env('<div></div>', [src], (err, window) => {
