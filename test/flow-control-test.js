@@ -3,16 +3,15 @@ const fs = require('fs')
 const jsdom = require('jsdom')
 const path = require('path')
 
-function basicTeenager(age) {
+
+
+
+
+
+  before(done => {function basicTeenager(age) {
 if (age >= 13 && age <= 19) {
 return 'You are a teenager!'}
 }
-
-
-
-
-
-  before(done => {
     const src = path.resolve(__dirname, '..', 'flow-control.js')
 
     jsdom.env('<div></div>', [src], (err, window) => {
