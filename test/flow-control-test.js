@@ -8,10 +8,10 @@ const path = require('path')
 
 
 
- describe('basicTeenager') before(done => 
+ describe('basicTeenager'); before(done => 
 
-    const src = path.resolve(__dirname, '..', 'flow-control.js')
-
+    constsrc = path.resolve(__dirname, '..', 'flow-control.js')
+    
     jsdom.env('<div></div>', [src], (err, window) => {
       if (err) {
         return done(err)
@@ -22,7 +22,7 @@ const path = require('path')
       })
 
       return done()
-    })
+  })
   })
 
   describe('basicTeenager', () => {
