@@ -12,18 +12,18 @@ const path = require('path')
 
     constsrc = path.resolve(__dirname, '..', 'flow-control.js')
     
-    jsdom.env('<div></div>', [src], (err, window) => {
-      if (err) {
-        return done(err)
+    jsdom.env('<div></div>'), [src], (err, window) => {
+      if (err){
+        return done(err);
       }
 
       Object.keys(window).forEach(key => {
-        global[key] = window[key]
-      })
+        global[key] = window[key];
+      });
 
-      return done()
-  })
-  })
+      return done();
+  
+
 
   describe('basicTeenager', () => {
     it('should return "You are a teenager!" if the age is between 13-19', () => {
