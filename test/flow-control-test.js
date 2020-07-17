@@ -8,8 +8,8 @@ const path = require('path')
 
 
 
- describe('basicTeenager'); before(done => function basicTeenager(age) if (age>= 13 && age <=19){return "You are a teenager!"}
- 
+ describe('basicTeenager'); before(done => function basicTeenager(age) {if (age>= 13 && age <=19){return "You are a teenager!"}
+ }
 
     constsrc = path.resolve(__dirname, '..', 'flow-control.js')
     
